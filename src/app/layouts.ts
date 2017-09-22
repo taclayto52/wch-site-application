@@ -1,21 +1,7 @@
-/*******************************************************************************
- * Copyright IBM Corp. 2017
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *******************************************************************************/
 /**
  * Do not modify this file, it will be auto-generated.
  */
+import { ArticleBodyImageComponent } from './components/article-body-image/article-body-image.component';
 import { AuthorProfileLayoutComponent } from './layouts/author-profile/authorProfileLayout';
 import { CarouselDynamicListLayoutComponent } from './layouts/carousel-dynamic-list/carouselDynamicListLayout';
 import { CarouselListLayoutComponent } from './layouts/carousel-list/carouselListLayout';
@@ -30,6 +16,7 @@ import { GalleryDynamicListLayoutComponent } from './layouts/gallery-dynamic-lis
 import { GalleryListLayoutComponent } from './layouts/gallery-list/galleryListLayout';
 import { HeroImageLayoutComponent } from './layouts/hero-image/heroImageLayout';
 import { HeroVideoLayoutComponent } from './layouts/hero-video/heroVideoLayout';
+import { IFrameLayoutComponent } from './layouts/i-frame/iFrameLayout';
 import { ImageWithInformationLayoutComponent } from './layouts/image-with-information/imageWithInformationLayout';
 import { LeadImageWithInformationLayoutComponent } from './layouts/lead-image-with-information/leadImageWithInformationLayout';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -39,6 +26,7 @@ import { VerticalDynamicListLayoutComponent } from './layouts/vertical-dynamic-l
 import { VerticalListLayoutComponent } from './layouts/vertical-list/verticalListLayout';
 
 export const LAYOUTS = [
+  ArticleBodyImageComponent,
   AuthorProfileLayoutComponent,
   CarouselDynamicListLayoutComponent,
   CarouselListLayoutComponent,
@@ -53,6 +41,7 @@ export const LAYOUTS = [
   GalleryListLayoutComponent,
   HeroImageLayoutComponent,
   HeroVideoLayoutComponent,
+  IFrameLayoutComponent,
   ImageWithInformationLayoutComponent,
   LeadImageWithInformationLayoutComponent,
   PageNotFoundComponent,

@@ -16,7 +16,6 @@
     "addPrefetch": "ibm-wch-sdk-cli add prefetch --data ./temp_data/ --src ./src/ ",
     "createSite": "ibm-wch-sdk-cli create site --name testpage --data ./dist/ ",
     "build-preload": " mkdir -p -m 777 temp_data && echo Pulling the site pages. Enter the user password for your WCH tenant: && wchtools pull -A --dir temp_data && npm run addPrefetch && rm -r temp_data &&  npm run build "
-
   },
   "private": true,
   "dependencies": {

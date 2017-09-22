@@ -5,6 +5,7 @@ scan/
 coverage/
 artifacts
 src/wchLayouts/types/
+src/wchLayouts
 
 *.log
 *.log.*
