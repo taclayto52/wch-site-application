@@ -1,1 +1,3 @@
-<iframe [src]="link" [height]="suggestedheight" [width]="suggestedwidth"></iframe>
+<div [id]="rContext.id">
+    <iframe [src]="link.linkURL" [height]="suggestedheight || 100%" [width]="suggestedwidth || 100%"></iframe>
+</div>
