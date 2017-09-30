@@ -1,7 +1,7 @@
 import {
-    LayoutComponent
+    LayoutComponent, RenderingContext
 } from 'ibm-wch-sdk-ng';
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TypeIFrameComponent } from './../../components/i-frame/typeIFrameComponent';
 
 /**
@@ -16,12 +16,13 @@ import { TypeIFrameComponent } from './../../components/i-frame/typeIFrameCompon
   templateUrl: './iFrameLayout.html',
   styleUrls: ['./iFrameLayout.scss']
 })
-export class IFrameLayoutComponent extends TypeIFrameComponent {
+export class IFrameLayoutComponent extends TypeIFrameComponent implements OnInit, OnDestroy{
 
     /**
      * TODO add custom fields here. These fields should be those
      * specific to this layout.
      */
+    rContext: RenderingContext;
 
     constructor() {
         super();
@@ -34,4 +35,15 @@ export class IFrameLayoutComponent extends TypeIFrameComponent {
         */
     }
 
+    ngOnInit() {
+        super.ngOnInit();
+
+        this.safeSubscribe(this.onRenderingContext, (renderingContext) => {
+            this.rContext = renderingContext;
+        });
+    }
+
+    ngOnDestroy() {
+        super.ngOnDestroy();
+    }
 }
