@@ -38,6 +38,8 @@ export class IFrameLayoutComponent extends TypeIFrameComponent implements OnInit
     ngOnInit() {
         super.ngOnInit();
 
+        // console.log(this.link.linkURL);
+
         this.safeSubscribe(this.onRenderingContext, (renderingContext) => {
             this.rContext = renderingContext;
         });
